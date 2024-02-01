@@ -1,0 +1,40 @@
+/* Header */
+.headerContainer {
+    background-color: $color-principal;
+    position: sticky;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 100;
+}
+
+/* NavBar */
+
+.navbar {
+    padding: 5%;
+    .container-fluid {
+        flex-wrap: nowrap !important;
+        img {
+            max-height: 100px;
+        };
+    }  
+    a {
+        color: $color-claro6 !important;
+        font-size: 20px;
+    }
+    .dropdown-menu {
+        a {
+            color: $color-oscuro2 !important;
+        }
+    }
+    .navbar-toggler {
+        background-color: $color-iconosTop !important;
+    }
+}
+
+.navbar.bg-body-tertiary {
+    background-color: $color-principal !important;
+}
+
+
+

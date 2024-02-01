@@ -1,0 +1,53 @@
+/* General */
+
+.footerIndex {
+    height: 150px;
+    background-color: $color-oscuro1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    section {
+        flex: 1;
+    }
+    .direccionFooter {
+        h5 {
+            margin-left: 20px;
+            color: $color-claro4;
+            font-size: 16px;
+        }
+    }
+    .contactosFooter {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        a {
+            flex: 1;
+            text-align: center;
+            color: $color-claro4;
+            i, h6 {
+                margin: 5px;
+                white-space: nowrap;
+            }
+        }
+    }
+    .redesFooter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        a {
+            margin-left: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            color: $color-claro4;
+            text-decoration: none;
+            i, h6 {
+                
+                margin: 5px;
+            }
+
+        }
+    }
+}

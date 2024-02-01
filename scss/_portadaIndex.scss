@@ -1,0 +1,40 @@
+.portadaIndex {
+    height: 500px;
+    background-image: url('../images/Portada.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    h1 {
+        font-size: 32px;
+        color: $color-principal;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px $color-claro3;
+    }
+    h2 {
+        font-size: 24px;
+        color: $color-oscuro3;
+        font-weight: 400;
+        text-shadow: 2px 2px 4px $color-claro4;
+    }
+    .hablemosWhatsApp {
+        margin: 20px;
+        font-size: 24px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background: radial-gradient(circle, $color-oscuro1, $color-claro1);
+        color: $color-iconosTop;
+        border: none;
+        box-shadow: 2px 2px 4px $color-oscuro4;
+        &:hover {
+            background: radial-gradient(circle, $color-claro1, $color-claro2);
+        }
+        i {
+            margin: 0px 0px 0px 10px;
+        }
+    }
+}

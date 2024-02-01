@@ -1,0 +1,81 @@
+.row{
+    margin: 0px !important;
+}
+.col{
+    padding: 0px !important;
+}
+
+.contactanosIndex {
+    background-color: $color-oscuro4;
+    p {
+        margin-bottom: 0;
+    }
+    .filaContactanos {
+        padding: 20px;
+        
+        .formularioContactanos {
+            padding: 10px;
+            min-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tituloFormulario {
+                padding-bottom: 5px;
+                color: $color-claro6;
+                border-bottom: 1px solid $color-claro4;
+            }
+            .inputFormulario {
+                padding: 10px; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .inputDato {
+                    padding: 10px;
+                    max-width: 500px;
+                    input, textarea {
+                        background-color: $color-claro6;
+                        border: none;
+                        border-radius: 5px;
+                        width: 100%;
+                    }
+                    input::placeholder, textarea::placeholder {
+                        padding: 0px 10px;
+                        color: $color-oscuro2;
+                    }
+                }
+                .botonesFormulario {
+                    padding: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    .botones {
+                        width: 100px;
+                        margin: 10px;
+                        border-radius: 20px;
+                        background: radial-gradient(circle, $color-claro1, $color-oscuro1);
+                        color: $color-iconosTop;
+                        border: none;
+                        box-shadow: 2px 2px 4px $color-oscuro3;
+                        &:hover {
+                            background: radial-gradient(circle, $color-claro1, $color-claro2);
+                        }
+                    }
+                }
+            }
+        }
+        .mapaContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 350px;
+            iframe {
+                width: 90%;
+                height: 90%;
+                border: 0;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+

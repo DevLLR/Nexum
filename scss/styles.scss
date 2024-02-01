@@ -1,0 +1,160 @@
+/* General */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:  Century, Arial, Arial Unicode, Helvetica, Sans-Serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Variables */
+
+$color-principal: #207981;
+$color-oscuro1: #1d6168;
+$color-oscuro2: #1c4d53;
+$color-oscuro3: #1b4246;
+$color-oscuro4: #0a2529;
+$color-claro1: #2b9aa1;
+$color-claro2: #45b7bc;
+$color-claro3: #72d5d6;
+$color-claro4: #a6e9e7;
+$color-claro5: #d3f4f3;
+$color-claro6: #f2fbfb;
+$color-iconosTop: #b9d1d3;
+$color-transparente: #d3f4f378;
+
+
+/* Import */
+
+@import "navBar";
+@import "portadaIndex";
+@import "slideIndex";
+@import "serviciosIndex";
+@import "portadaContactanos";
+@import "contactanosIndex";
+@import "footer";
+
+/* Media Queries */
+
+@media (max-width: 62rem) {
+    .slider-indicators {
+        margin-bottom: 0.8rem !important;
+        display: flex !important;
+    }
+    .serviciosIndex {
+        .nuestrosServicios {
+            .swiffy-slider {
+                --swiffy-slider-item-count: 3;
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .serviciosIndex {
+        .nuestrosServicios {
+            .swiffy-slider {
+                --swiffy-slider-item-count: 4;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        padding-left: 0px;
+        .navbar-collapse {
+            padding-left: 80px;
+        }
+    }
+    .serviciosIndex {
+        .nuestrosServicios {
+            .swiffy-slider {
+                --swiffy-slider-item-count: 2;
+            }
+        }
+    }
+    .footerIndex {
+        .redesFooter {
+            justify-content: center;
+            align-items: center;
+            a {
+                margin: 0;
+                h6 {
+                    display: none;
+                }
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .headerContainer {
+        padding-left: 0px;
+        .container-fluid {
+            padding-left: 0px;
+            img {
+                max-height: 75px;
+            }
+            .navbar-toggler {
+                display: flex;
+                align-items: center;
+                .navbar-toggler-icon {
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+        }
+        .navbar-collapse {
+            padding-left: 40px;
+            a {
+                font-size: 16px;
+            }
+            .dropdown-menu {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .portadaIndex {
+        height: 300px;
+    }
+    .serviciosIndex {
+        .nuestrosServicios {
+            .swiffy-slider {
+                --swiffy-slider-item-count: 1;
+            }
+        }
+    }
+    .footerIndex {
+        .contactosFooter {
+            justify-content: center;
+            align-items: center;
+            a {
+                margin: 0;
+                h6 {
+                    display: none;
+                }
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .contactanosIndex .filaContactanos .formularioContactanos,
+    .contactanosIndex .mapaContainer {
+        min-width: 250px;
+    }
+}
+
+

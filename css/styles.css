@@ -1,0 +1,548 @@
+/* General */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Century, Arial, Arial Unicode, Helvetica, Sans-Serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Variables */
+/* Import */
+/* Header */
+.headerContainer {
+  background-color: #207981;
+  position: sticky;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 100;
+}
+
+/* NavBar */
+.navbar {
+  padding: 5%;
+}
+.navbar .container-fluid {
+  flex-wrap: nowrap !important;
+}
+.navbar .container-fluid img {
+  max-height: 100px;
+}
+.navbar a {
+  color: #f2fbfb !important;
+  font-size: 20px;
+}
+.navbar .dropdown-menu a {
+  color: #1c4d53 !important;
+}
+.navbar .navbar-toggler {
+  background-color: #b9d1d3 !important;
+}
+
+.navbar.bg-body-tertiary {
+  background-color: #207981 !important;
+}
+
+.portadaIndex {
+  height: 500px;
+  background-image: url("../images/Portada.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.portadaIndex h1 {
+  font-size: 32px;
+  color: #207981;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #72d5d6;
+}
+.portadaIndex h2 {
+  font-size: 24px;
+  color: #1b4246;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px #a6e9e7;
+}
+.portadaIndex .hablemosWhatsApp {
+  margin: 20px;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: radial-gradient(circle, #1d6168, #2b9aa1);
+  color: #b9d1d3;
+  border: none;
+  box-shadow: 2px 2px 4px #0a2529;
+}
+.portadaIndex .hablemosWhatsApp:hover {
+  background: radial-gradient(circle, #2b9aa1, #45b7bc);
+}
+.portadaIndex .hablemosWhatsApp i {
+  margin: 0px 0px 0px 10px;
+}
+
+.slideIndex .swiffy-slider.slider-indicators-outside {
+  padding: 0 !important;
+}
+.slideIndex p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.serviciosIndex {
+  margin: 2%;
+}
+.serviciosIndex .deudaIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviciosIndex .deudaIndex .tituloIntro {
+  margin: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b9aa1;
+}
+.serviciosIndex .deudaIndex .introDeuda {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(6);
+  grid-template-rows: repeat(3);
+  grid-row-gap: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+.serviciosIndex .deudaIndex .introDeuda .deudaTexto3 {
+  font-size: 24px;
+  text-align: center;
+  align-items: l;
+  font-style: italic;
+  font-weight: 600;
+  color: #45b7bc;
+}
+.serviciosIndex .pasosDeuda {
+  margin-bottom: 20px;
+}
+.serviciosIndex .pasosDeuda .tituloPasos {
+  margin: 15px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b9aa1;
+}
+.serviciosIndex .pasosDeuda p {
+  font-size: 20px;
+}
+.serviciosIndex .pasosDeuda ul * {
+  border-radius: 10px !important;
+  color: #0a2529;
+}
+.serviciosIndex .pasosDeuda .slider-indicators * {
+  height: 2rem;
+  background-color: #1d6168;
+  color: #b9d1d3;
+}
+.serviciosIndex .nuestrosServicios .tituloServicios {
+  margin: 15px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b9aa1;
+}
+.serviciosIndex .nuestrosServicios .slider-container {
+  padding: 0px !important;
+}
+.serviciosIndex .nuestrosServicios .slider-container .cardEmbargo {
+  width: 100%;
+}
+.serviciosIndex .nuestrosServicios .slider-container .card-img-top {
+  object-fit: cover;
+}
+.serviciosIndex .nuestrosServicios .slider-container .card-title {
+  color: #1d6168;
+  font-size: 28px;
+}
+.serviciosIndex .nuestrosServicios .slider-container .card-text {
+  margin-bottom: 45px !important;
+  font-size: 18px;
+  color: #1b4246;
+}
+.serviciosIndex .nuestrosServicios .slider-container .btn.btn-primary {
+  position: absolute;
+  bottom: 10px;
+  background-color: #2b9aa1;
+  color: #f2fbfb;
+  border-color: #2b9aa1;
+  font-size: 20px;
+}
+
+.tituloExpand {
+  color: #2b9aa1;
+  font-size: 32px;
+  font-family: Century, Arial, Arial Unicode, Helvetica, Sans-Serif;
+}
+
+.subTituloExpand {
+  color: #1d6168;
+  font-size: 24px;
+  text-align: left;
+}
+
+.linkWappExpand {
+  color: #1d6168;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.textoExpand {
+  color: #1b4246;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Century, Arial, Arial Unicode, Helvetica, Sans-Serif;
+}
+
+.portadaContactanos {
+  height: 400px;
+  background-image: url("../images/Contactanos.avif");
+  background-size: cover;
+  background-position: center 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.portadaContactanos h2 {
+  font-size: 30px;
+  color: #1b4246;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #a6e9e7;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(211, 244, 243, 0.4705882353);
+}
+.portadaContactanos .hablemosWhatsApp {
+  margin: 20px;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: radial-gradient(circle, #1d6168, #2b9aa1);
+  color: #b9d1d3;
+  border: none;
+  box-shadow: 2px 2px 4px #0a2529;
+}
+.portadaContactanos .hablemosWhatsApp:hover {
+  background: radial-gradient(circle, #2b9aa1, #45b7bc);
+}
+.portadaContactanos .hablemosWhatsApp i {
+  margin: 0px 0px 0px 10px;
+}
+
+.row {
+  margin: 0px !important;
+}
+
+.col {
+  padding: 0px !important;
+}
+
+.contactanosIndex {
+  background-color: #0a2529;
+}
+.contactanosIndex p {
+  margin-bottom: 0;
+}
+.contactanosIndex .filaContactanos {
+  padding: 20px;
+}
+.contactanosIndex .filaContactanos .formularioContactanos {
+  padding: 10px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .tituloFormulario {
+  padding-bottom: 5px;
+  color: #f2fbfb;
+  border-bottom: 1px solid #a6e9e7;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .inputDato {
+  padding: 10px;
+  max-width: 500px;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .inputDato input, .contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .inputDato textarea {
+  background-color: #f2fbfb;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .inputDato input::placeholder, .contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .inputDato textarea::placeholder {
+  padding: 0px 10px;
+  color: #1c4d53;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .botonesFormulario {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .botonesFormulario .botones {
+  width: 100px;
+  margin: 10px;
+  border-radius: 20px;
+  background: radial-gradient(circle, #2b9aa1, #1d6168);
+  color: #b9d1d3;
+  border: none;
+  box-shadow: 2px 2px 4px #1b4246;
+}
+.contactanosIndex .filaContactanos .formularioContactanos .inputFormulario .botonesFormulario .botones:hover {
+  background: radial-gradient(circle, #2b9aa1, #45b7bc);
+}
+.contactanosIndex .filaContactanos .mapaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+}
+.contactanosIndex .filaContactanos .mapaContainer iframe {
+  width: 90%;
+  height: 90%;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* General */
+.footerIndex {
+  height: 150px;
+  background-color: #1d6168;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerIndex section {
+  flex: 1;
+}
+.footerIndex .direccionFooter h5 {
+  margin-left: 20px; 
+  color: #a6e9e7;
+  font-size: 16px;
+}
+.footerIndex .contactosFooter {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerIndex .contactosFooter a  {
+  flex: 1;
+  text-align: center;
+  color: #a6e9e7;
+}
+.footerIndex .contactosFooter div  {
+  flex: 1;
+  text-align: center;
+  color: #a6e9e7;
+}
+.footerIndex .contactosFooter a i, .footerIndex .contactosFooter a h6 {
+  margin: 5px;
+  white-space: nowrap;
+}
+.textFooter {
+  font-size: 20px !important;
+}
+.iconFooter {
+  font-size: 24px !important;
+}
+.footerIndex .redesFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wappFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+}
+.wappFooter i{
+  text-align: center;
+  color: #a6e9e7;
+}
+.footerIndex .redesFooter a {
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #a6e9e7;
+  text-decoration: none;
+}
+.footerIndex .redesFooter a i, .footerIndex .redesFooter a h6 {
+  margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 62rem) {
+  .slider-indicators {
+    margin-bottom: 0.8rem !important;
+    display: flex !important;
+  }
+  .serviciosIndex .nuestrosServicios .swiffy-slider {
+    --swiffy-slider-item-count: 3;
+  }
+}
+@media (min-width: 1500px) {
+  .serviciosIndex .nuestrosServicios .swiffy-slider {
+    --swiffy-slider-item-count: 4;
+  }
+}
+
+@media (max-width: 1390px) {
+  .textFooter {
+    font-size: 16px !important;
+  }
+  .iconFooter {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding-left: 0px;
+  }
+  .headerContainer .navbar-collapse {
+    padding-left: 80px;
+  }
+  .serviciosIndex .nuestrosServicios .swiffy-slider {
+    --swiffy-slider-item-count: 2;
+  }
+  .footerIndex .redesFooter {
+    justify-content: space-around;
+    align-items: center;
+    
+  } 
+  .footerIndex .redesFooter a {
+    margin: 0;
+  }
+  .footerIndex .redesFooter a h6 {
+    display: none;
+  }
+  .footerIndex .redesFooter a i {
+    font-size: 24px;
+  }
+  .footerIndex .redesFooter div i {
+    font-size: 24px;
+  }
+  .textFooter {
+    font-size: 12px !important;
+  }
+  .iconFooter {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 576px) {
+  .headerContainer {
+    padding-left: 0px;
+  }
+  .headerContainer .container-fluid {
+    padding-left: 0px;
+  }
+  .headerContainer .container-fluid img {
+    max-height: 75px;
+  }
+  .headerContainer .container-fluid .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+  .headerContainer .container-fluid .navbar-toggler .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .headerContainer .navbar-collapse {
+    padding-left: 40px;
+  }
+  .headerContainer .navbar-collapse a {
+    font-size: 16px;
+  }
+  .headerContainer .navbar-collapse .dropdown-menu a {
+    font-size: 12px;
+  }
+  .portadaIndex {
+    height: 300px;
+  }
+  .serviciosIndex .nuestrosServicios .swiffy-slider {
+    --swiffy-slider-item-count: 1;
+  }
+  .footerIndex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+  .direccionFooter{ 
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    justify-content: space-around ;
+    
+  }
+  .footerIndex .direccionFooter h5 { 
+  margin-left: 0px;
+  }
+  .contactosFooter {
+    justify-content: center;
+    align-items: center;
+  }
+  .redesFooter{ 
+    flex-direction: row;
+  }
+  .footerIndex .contactosFooter a {
+    margin: 0;
+  }
+  .footerIndex .contactosFooter div a {
+    display: none;
+  }
+  .footerIndex .contactosFooter div i {
+    font-size: 24px;
+  }
+  .footerIndex .contactosFooter a i {
+    font-size: 24px;
+  }
+  .footerIndex .contactosFooter a h6 {
+    display: none;
+  }
+  .contactanosIndex .filaContactanos .formularioContactanos,
+  .contactanosIndex .mapaContainer {
+    min-width: 250px;
+  }
+  .iconFooter {
+    font-size: 24px !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
